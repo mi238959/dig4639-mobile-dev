@@ -15,14 +15,11 @@ applications and sites.
 
 https://www.linkedin.com/in/miranda-foster-2b312919b/
 
-<<<<<<< HEAD
 ## Merging
 1. Item 1 [Google]
 (http://www.google.com)
 1. Item 2
 1. Item 3
-=======
->>>>>>> 3f5ef08b20486840ebf21d5df1fc5668b073035a
 ## Conflicts
 
 This section represents code on the server that isn't in the local repository
