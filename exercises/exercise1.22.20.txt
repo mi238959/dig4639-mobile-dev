@@ -5,7 +5,7 @@ created playlist so that it is available on their device without a connection,
 which requires storage and caching. 
 
 Contrubuters:
-mi238959
-ka022247 
-ha073397
-ta741447
+Miranda Foster: mi238959
+Hannia Morales: HanniaDaniela
+Kayla Lebron: kri0s
+Taylor Botts: taylorbotts
