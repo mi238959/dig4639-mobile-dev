@@ -14,3 +14,9 @@ management abilities with programming and design skills to help companies design
 applications and sites. 
 
 https://www.linkedin.com/in/miranda-foster-2b312919b/
+
+## Merging
+1. Item 1 [Google]
+(http://www.google.com)
+1. Item 2
+1. Item 3
