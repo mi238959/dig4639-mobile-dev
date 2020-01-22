@@ -20,3 +20,6 @@ https://www.linkedin.com/in/miranda-foster-2b312919b/
 (http://www.google.com)
 1. Item 2
 1. Item 3
+## Conflicts
+
+This section represents code on the server that isn't in the local repository

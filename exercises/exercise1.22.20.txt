@@ -1,0 +1,11 @@
+Managing a local playlist: users have ability to add all songs to a local playlist that are available in the app,  
+but only have access to downloaded songs without a network connection. Requires a created account, a search function 
+to find specific songs, and a folder creation for when a playlist is created. Users then can download songs in the 
+created playlist so that it is available on their device without a connection, 
+which requires storage and caching. 
+
+Contrubuters:
+Miranda Foster: mi238959
+Hannia Morales: HanniaDaniela
+Kayla Lebron: kri0s
+Taylor Botts: taylorbotts
