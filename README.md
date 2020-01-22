@@ -14,3 +14,7 @@ management abilities with programming and design skills to help companies design
 applications and sites. 
 
 https://www.linkedin.com/in/miranda-foster-2b312919b/
+
+## Conflicts
+
+This section represents code on the server that isn't in the local repository
