@@ -1,38 +1,55 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import todoList from './todoList.json'
 
-const todoList = [
-  {
-      content: 'Task 1', priority: 2, completed: true
-  },
-  {
-    content: 'Task 2', priority: 1, completed: true
-  },
-  {
-    content: 'Task 3', priority: 3, completed: false
-  }
-]
 
 function TodoItem(props) {
-  return <p>{props.content}</p>
+  return <p className='card' onClick={() => props.removeTask(props.id)}>{props.content}</p>
 }
 
-function App() {
-  const todoListFiltered = todoList.filter((value) => value.completed)
-  let todoArray = todoListFiltered.map(
-    (value) => <TodoItem content={value.content} />
-    )
-    /* [
-    <TodoItem content="Item 1"/>
-    <TodoItem content="Item 2"/>
-    <TodoItem content="Item 3"/>
-  ]*/
-  return (
-    todoList.filter((v) => v.completed).map(
-      (v) => <TodoItem priority={v.priority} content={v.content} completed={v.completed}/>)
+class TodoList extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      todoList,
+      hideCompletedItems:false 
     
-  );
+    }
+    this.currentId = 4;
+  }
+  addTask(e) {
+    let todoList = this.state.todoList
+    todoList.push(
+      {"id": this.currentId, "completed": true, "priority": 1, "content": this.refs.taskContent.value}
+    )
+    this.currentId++
+    this.setState({todoList:todoList})
+  }
+  removeTask(id) {
+    let todoList = this.state.todoList
+    todoList = todoList.filter((v) => v.id !== id)
+    this.setState({todoList})
+  }
+  render() {
+  return (
+    <>
+    <input type="text" ref="taskContent"/> 
+    <input type="button" value="Add Task" onClick={(e) => this.addTask(e)} />
+    <input ref="hideCompletedItemsCheckbox" type="checkbox" id="hideCompletedItems" 
+     name="hideCompletedItems" value="HideCompletedItems" 
+     onChange={(e) => this.setState({hideCompletedItems: e.target.checked})} />
+    <label htmlFor="hideCompletedItems">I have a bike</label><br></br>
+    { ((this.state.hideCompletedItems) ? this.state.todoList
+    .filter((v) => !v.completed) : this.state.todoList)
+    .map((v) => <TodoItem id={v.id} removeTask={(id) => this.removeTask(id)} key={v.id} content={v.content} 
+    priority={v.priority} 
+    completed={v.completed}/>)}
+    </>)
+}
+}
+
+function App(props) {
+  return <TodoList />
 }
 
 export default App;
