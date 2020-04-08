@@ -1,0 +1,103 @@
+[
+    {
+      "question": "How often should you wear sunblock at the beach?",
+      "answers" :
+      [
+        {"text": "Always!",
+        "correct": true
+        },
+        {
+          "text": "Most of the time",
+          "correct": false
+        },
+        {
+          "text": "Hardly",
+          "correct": false
+        },
+        {
+          "text": "Never",
+          "correct": false
+        } 
+      ]
+    },
+    {
+      "question": "Will you end the semester with good grades?",
+      "answers": [
+        {
+          "text": "Absolutely! I got this in the bag",
+          "correct": true
+        },
+        {
+          "text": "I did my best, and that's what matters",
+          "correct": true
+        },
+        {
+          "text": "Who cares",
+          "correct": false
+        },
+        {
+          "text": "I gave up a long time ago",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What will be your first summer activity?",
+      "answers": [
+        {
+          "text": "Watching Netflix guilt free",
+          "correct": true
+        },
+        {
+          "text": "Reading a book for fun",
+          "correct": true
+        },
+        {
+          "text": "Going Swimming",
+          "correct": true
+        },
+        {
+          "text": "Nothing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is a goal you have for the summer season?",
+      "answers": [
+        {
+          "text": "Working on my bikini body",
+          "correct": true
+        },
+        {
+          "text": "Learning how to cook",
+          "correct": true
+        },
+        {
+          "text": "Not Sleeping",
+          "correct": false
+        },
+        {
+          "text": "Getting a new job",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Do you own a swimsuit?",
+      "answers": [
+        {
+          "text": "Who doesn't? This is Florida",
+          "correct": true
+        },
+        {
+          "text": "No but I will buy one",
+          "correct": true
+        },
+        {
+          "text": "Ew, swimming is gross",
+          "correct": false
+        }
+      ]
+    }
+  ]
