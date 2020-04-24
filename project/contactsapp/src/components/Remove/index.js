@@ -23,7 +23,8 @@ class Remove extends React.Component {
         position:this.inputData.current.value,
       })}
       fetch("http://plato.mrl.ai:8080/contacts/remove", newHeader)
-      .then((res) => res.json())
+      .then((res) => res.json());
+      window.location.reload()
   }
   submitted = d => {
     d.preventDefault();
@@ -37,14 +38,11 @@ class Remove extends React.Component {
         <form onSubmit={this.submitted}>
           <label>Remove by index number</label><br/>
           <input type="text" ref={this.inputData} id ="position" /><br/>
-          <button type="submit" onClick={this.pageRefresh}>Submit</button>
+          <button type="submit" onClick={this.submitted}>Submit</button>
           <br />
        </form>
     </div>
     );
-  }
-  pageRefresh() {
-    window.location.reload();
   }
 }
 

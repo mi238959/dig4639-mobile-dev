@@ -34,13 +34,13 @@ class Add extends React.Component {
           .then((data) => {
               this.setState({value:this.input.current.value})
               this.setState({value:this.input2.current.value})
-        }, [])
+        });
+        window.location.reload()
       }
 
   submitted = a => {
     a.preventDefault();
-    this.newContact
-    ()
+    this.newContact()
   }
   
   render() {
@@ -55,14 +55,12 @@ class Add extends React.Component {
             <label htmlFor="name">Phone Number:</label><br/>
             <input type="text" ref={this.input2} id ="number" /><br/>
 
-            <button type="submit" onClick={this.pageRefresh}>Submit</button>
+            <button type="submit" onClick={this.submitted}>Submit</button>
          </form>
       </div>
     );
   }
-  pageRefresh() {
-    window.location.reload();
-  }
+  
 }
 
 export default Add;
